@@ -58,7 +58,7 @@ BEGIN
 END//
 DELIMITER ;
 
--- CALL add_booking('2024-02-25 19:30:00', 1, 2);
--- CALL add_booking('2024-02-25 18:30:00', 1, 2);
+CALL add_booking('2024-02-25 19:30:00', 1, 2);
+CALL add_booking('2024-02-25 18:30:00', 1, 2);
 CALL update_booking(4, '2024-02-28 18:30:00');
 CALL cancel_booking(4)
