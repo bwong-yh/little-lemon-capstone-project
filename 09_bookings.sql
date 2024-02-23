@@ -39,7 +39,26 @@ END IF;
 
 SELECT booking_message AS booking_status;
 END//
+
+CREATE PROCEDURE update_booking(b_id INT, date_time DATETIME)
+BEGIN
+    UPDATE booking
+    SET booking_date = date_time
+    WHERE booking_id = b_id;
+
+    SELECT CONCAT('Booking ', b_id, ' has been updated to: ', DATE_FORMAT(date_time, '%b %d, %Y at %H:%i')) as confirmation;
+END//
+
+CREATE PROCEDURE cancel_booking(b_id INT)
+BEGIN
+    DELETE FROM booking
+    WHERE booking_id = b_id;
+
+    SELECT CONCAT('Booking ', b_id, ' has been cancelled') as confirmation;
+END//
 DELIMITER ;
 
-CALL add_booking('2024-02-25 19:30:00', 1, 2);
-CALL add_booking('2024-02-25 18:30:00', 1, 2);
+-- CALL add_booking('2024-02-25 19:30:00', 1, 2);
+-- CALL add_booking('2024-02-25 18:30:00', 1, 2);
+CALL update_booking(4, '2024-02-28 18:30:00');
+CALL cancel_booking(4)
