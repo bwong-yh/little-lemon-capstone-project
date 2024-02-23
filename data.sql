@@ -21,10 +21,10 @@ INSERT INTO booking (booking_date, table_number, customer_id) VALUES
     ('2024-02-25 19:00:00', 1, 1), 
     ('2024-02-26 17:30:00', 2, 4); 
 
-INSERT INTO menu (cuisine, price, item_id) VALUES 
-    ('Japanese', 25.99, 1),
-    ('French', 29.99, 2),
-    ('American', 19.99, 3);
+INSERT INTO menu (menu_name, cuisine, price, item_id) VALUES 
+    ('Sushi Delight', 'Japanese', 25.99, 1),
+    ('French Feast', 'French', 29.99, 2),
+    ('American Classics', 'American', 19.99, 3);
 
 INSERT INTO customer_order (order_date, quantity, total_cost, customer_id, menu_id) VALUES 
     ('2024-02-19', 1, 25.99, 1, 1),  
