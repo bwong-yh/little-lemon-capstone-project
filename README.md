@@ -12,7 +12,7 @@
 
 ### Profits between 2019 and 2022
 
-![Profits](./images/profit_chart.png)
+![Profits](./images/profits_chart.png)
 
 ### Customers Bubble Chart
 
