@@ -1,8 +1,9 @@
 # Little Lemon Capstone Project
 
-This is a capstone project from the Meta Database Engineer Professional Certificate provided on Coursera. The objective of this project is to optimize querying data from the MySQL database using various database objects.
+This is a capstone project from the Meta Database Engineer Professional Certificate provided on Coursera. The objective of this project is to optimize querying data from the MySQL database using various database objects and to create visualization using Tableau.
 
 Database: MySQL
+Visualization: Tableau
 
 ## Set up
 
