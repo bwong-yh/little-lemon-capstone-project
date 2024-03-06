@@ -1,4 +1,4 @@
-SELECT menu_name
+SELECT *
 FROM menu
 WHERE menu_id = ANY (
 	select menu_id from customer_order
